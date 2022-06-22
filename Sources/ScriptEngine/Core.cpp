@@ -1,4 +1,5 @@
 #include <CTRPluginFramework.hpp>
+#include "Editor/ScriptEditor.h"
 #include "Core.h"
 
 namespace CTRPluginFramework::ScriptEngine {
@@ -14,6 +15,12 @@ namespace CTRPluginFramework::ScriptEngine {
     return g_instance;
   }
 
+  ScriptEditor* Core::get_editor() {
+    return get_instance()->editor;
+  }
 
+  Core::Core() {
+    this->editor = new 
+  }
 
 }

@@ -23,4 +23,9 @@ namespace CTRPluginFramework::ScriptEngine {
     inst->error_list.emplace_back(err);
   }
 
+  std::vector<ErrorInfo> const& Core::get_err_list() const {
+    return this->error_list;
+  }
+
+
 }
