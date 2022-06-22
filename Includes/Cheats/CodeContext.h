@@ -27,6 +27,7 @@ namespace CTRPluginFramework::Cheats {
     EnabledFlags enabled_flags;
     DropCheats c_dropcheats;
     CAutoDrop c_autodrop;
+    char chbuffer[0x400];
 
     void init();
 

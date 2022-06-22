@@ -3,9 +3,16 @@
 
 namespace CTRPluginFramework::ScriptEngine {
   namespace {
-    std::vector<ErrorInfo> error_list;
+    Core* g_instance;
   }
 
+  Core* Core::get_instance() {
+    if( !g_instance ) {
+      g_instance = new Core;
+    }
+
+    return g_instance;
+  }
 
 
 

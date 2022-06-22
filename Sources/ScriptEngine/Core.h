@@ -23,5 +23,6 @@ namespace CTRPluginFramework::ScriptEngine {
   private:
     Core();
 
+    std::vector<ErrorInfo> error_list;
   };
 }
